@@ -1874,6 +1874,13 @@ public final class Settings {
         public static final String TTY_MODE = "tty_mode";
 
         /**
+         * Whether noise suppression is enabled. The value is
+         * boolean (1 or 0).
+         * @hide
+         */
+        public static final String NOISE_SUPPRESSION = "noise_suppression";
+
+        /**
          * Whether the sounds effects (key clicks, lid open ...) are enabled. The value is
          * boolean (1 or 0).
          */
@@ -2109,6 +2116,7 @@ public final class Settings {
             CALL_AUTO_RETRY,
             HEARING_AID,
             TTY_MODE,
+            NOISE_SUPPRESSION,
             SOUND_EFFECTS_ENABLED,
             HAPTIC_FEEDBACK_ENABLED,
             POWER_SOUNDS_ENABLED,
@@ -2959,6 +2967,14 @@ public final class Settings {
          * @hide
          */
         public static final String WEATHER_STATUSBAR_STYLE = "weather_statusbar_style";
+
+        /**
+         * Which weather view mode we're using (forecast versus updated date)
+         *
+         * @hide
+         */
+        public static final String WEATHER_PANEL_VIEW_MODE = "weather_panel_view_mode";
+
 
         /**
          * Whether to enable torch by long pressing power from a screen-off state
